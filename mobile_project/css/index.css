@@ -1,0 +1,236 @@
+html{
+    font-size: 100px;
+}
+body{
+    min-width: 320px;
+    max-width: 640px;
+    margin: auto;
+}
+.main{
+    min-width: 3.2rem;
+    max-width: 6.4rem;
+}
+/*****************************
+==========top-header==========
+/*****************************/
+.top-header{
+    height: 0.5rem;
+    padding: 0.1rem 0;
+    width: 100%;
+    background: orange;
+    border-radius: 0.1rem;
+    box-shadow: 0 0.05rem 0.05rem 0.01rem #000;
+}
+.wrap{
+    position: relative;
+    max-width: 5.8rem;
+    height: 100%;
+    margin: auto;
+}
+.top-header .wrap .left select{
+    height: 0.5rem;
+    width: 0.8rem;
+    background: url("../img/top-header/down.png")no-repeat right center/0.19rem 0.19rem;
+    font-size: 0.2rem;
+    color:#fff;
+    border: none;
+    outline: none;
+    -webkit-appearance: none;/*去掉select的三角形*/
+}
+.top-header .wrap .left select option{
+    background: orange;
+    border: 0.01rem solid orange;
+}
+.top-header .wrap .middle {
+    padding-left: 1rem;
+}
+.top-header .wrap .middle input{
+    height: 0.45rem;
+    width: 4rem;
+    font-size: 0.2rem;
+    text-indent: 0.5rem;
+    background: url("../img/top-header/zoom.png")no-repeat 0.1rem center/0.36rem 0.29rem;
+    border-radius: 0.1rem;
+    outline: none;
+    border: 0.01rem solid #fff;
+}
+.top-header .wrap .right{
+    position: absolute;
+    right: 0;
+    top: calc(50% - 0.205rem);
+    height: 0.41rem;
+    width: 0.41rem;
+    background: url("../img/top-header/saoma.png")no-repeat 0 0/0.41rem 0.41rem;
+
+}
+/*****************************
+==========top-banner==========
+/*****************************/
+
+.swiper-container {
+    width: 6.4rem;
+    height: 3rem;
+    margin-top: 0.2rem;
+    box-shadow: 0 0.05rem 0.05rem 0.01rem #000;
+}
+.swiper-container img{
+    width: 6.4rem;
+    height: 3rem;
+}
+/*****************************
+==========mid-banner==========
+/*****************************/
+.swiper-container1 {
+    position: relative;
+    width: 6.4rem;
+    height: 3rem;
+    margin-top: 0.2rem;
+    overflow: hidden;
+}
+.mid-banner .flex{
+    columns: 1rem 4;
+    text-align: center;
+}
+.mid-banner .flex li img{
+    width: 0.83rem;
+    transition: 1s;
+
+}
+.mid-banner .flex li img:hover{
+    transform: rotate(360deg);
+    box-shadow: 0 0 0.1rem 0 #000;
+}
+.mid-banner .flex li:nth-child(2) img{
+    width: 1.01rem;
+}
+.mid-banner .flex li p{
+    text-align: center;
+    line-height: 0.5rem;
+    font-size: 0.2rem;
+}
+
+/*****************************
+==========middle===============
+/*****************************/
+.middle .free{
+    border-top: 0.05rem solid #666;
+}
+.middle  .free header{
+    position: relative;
+    height: 0.4rem;
+    margin: 0.3rem 0;
+    padding-left: 0.2rem;
+    font-weight: bold;
+    font-size: 0.2rem;
+    color:#666;
+    border-left: 0.05rem solid orangered;
+    border-top: 0.02rem solid transparent;
+    border-right: 0.02rem solid transparent;
+    border-bottom: 0.02rem solid transparent;
+}
+.middle .free header .mid {
+    text-align: center;
+}
+.middle  .free header .mid span{
+    color: red;
+}
+.middle  .free header .right{
+    position: absolute;
+    right: 0;
+    top: calc(50% - 0.2rem);
+    height: 0.4rem;
+}
+.middle  .free .pic ul{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    font-size: 0.2rem;
+    font-weight: bold;
+    color: #666;
+    line-height: 0.5rem;
+
+}
+.middle  .free .pic ul li{
+    width: 25%;
+}
+.middle  .free .pic ul li a img{
+    width: 1.31rem;
+    border-radius: 50%;
+    transition: 1s;
+
+}
+.middle  .free .pic ul li a img:hover{
+    transform: scale(1.2);
+    box-shadow: 0.02rem 0.02rem 0.05rem 0.02rem #666;
+}
+.middle  .mid-middle .free .pic ul li{
+    margin-bottom: 0.3rem;
+}
+.middle  .mid-middle .free .pic ul li p{
+    width: 1.31rem;
+    margin-left: 0.15rem;
+    margin-top: 0.2rem;
+    border-bottom: 0.01rem solid #666;
+}
+.middle .mid-bottom .love{
+    margin-bottom: 0.3rem;
+}
+.middle .mid-bottom .love img{
+    width: 2rem;
+    transition: 1s;
+}
+.middle .mid-bottom .love img:hover{
+    transform: scale(0.8);
+    box-shadow: 0 0 0.1rem #000;
+}
+.middle .mid-bottom .love .right{
+    width: 4rem;
+    color: #666;
+}
+
+.middle .mid-bottom .love .right p{
+    font-size: 0.2rem;
+    font-weight: bold;
+
+}
+.middle .mid-bottom .love .mid{
+    font-size: 0.2rem;
+    font-weight: bold;
+}
+.middle .mid-bottom .love .right .bottom p{
+    color: red;
+}
+footer .all{
+    height: 1rem;
+    font-weight: bold;
+    font-size: 0.2rem;
+    text-align: center;
+    line-height: 1rem;
+
+}
+footer .all a{
+    color: #666;
+    padding-bottom: 1.5rem;
+}
+footer .nav{
+    position: fixed;
+    bottom: 0;
+    height: 1rem;
+    width: 6.4rem;
+    background: orange;
+    border-radius: 0.1rem;
+}
+footer .nav ul{
+    display: flex;
+}
+footer .nav ul li{
+    width: 25%;
+    text-align: center;
+    font-size: 0.2rem;
+    font-weight: bold;
+    color: #fff;
+    line-height: 0.5rem;
+}
+footer .nav ul li img{
+    width: 0.48rem;
+}
